@@ -23,3 +23,13 @@ res = requests.get(
 )
 print ('test',res)
 print (res.text)
+# response = requests.request("POST", AUTH_URL, headers=headers, data=params)
+params2 = {'username':'sgeede','token':'j43kFzt52SKEQ5cXDtPPpRhQXnwm24','db':'14_AW','name':'David Odestest','client_id':'123123sdxd'}
+AUTH_URL2 = 'http://192.168.0.179:8069/api/post/crm_data/'
+response = requests.get(
+    AUTH_URL2, 
+    params=params2
+)
+print ('test',response)
+print (response.text)
+# datas = response.json()
